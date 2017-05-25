@@ -1,0 +1,38 @@
+body{
+    margin-left:auto;
+    margin-right:auto;
+    width:1080px;
+    height: 100vh;
+}
+
+a{
+    color:#6bd0ff;
+    text-decoration:none;
+}
+
+.active-page{
+    padding-left:5px;
+    border-left:3px currentColor solid;  /* currentColor : 현재 글자색을 따르겠다*/
+}
+
+a:hover{
+    color:#3981e6
+}
+
+
+/*  각페이지마다 배경이미지 변경 <-id 속성으로 구분   */
+#travel{
+    /*background: 색상(color) 이미지경로(url()) 반복설정(repeat) 위치(position) 고정설정(attachment) */
+    /*기본값*/
+    /*background: 투명 leㄽ top scroll */
+    background: url(../images/travel.jpg) no-repeat;
+    background-size: contain;
+}
+#spring{
+    background: url(../images/spring.jpg);
+    background-size: cover;
+}
+#summer{
+    background: url(../images/summer.jpg);
+    background-size: cover;
+}
