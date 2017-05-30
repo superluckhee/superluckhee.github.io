@@ -1,0 +1,71 @@
+html{
+    font-size: 10px;
+}
+
+/* 가이드라인 화면에 보여준다. */
+body{
+    margin:0;
+    background: url("../assets/leading-pattern-21.png");
+    height:100vh;
+    /* 본문 디자인(공통 속성 상속) */
+    color:#6b6a6a;
+    font:300 1.4rem/1.5 'Nanum Barun Gothic';   /* 14px/16px*100=87.5%   :웹브라우저의 기본 폰트크기인 16px에 따라 상대값을 적용하기 위해  */  /* 폰트두께 ligit:300*/
+}
+
+/*단락디자인*/
+p{
+    margin-top:0;
+    margin-bottom: 2.1em;  /*  21px/10px = 2.1*/
+}
+
+/* 제목 디자인: modular scale = 1.24 */
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+  margin-bottom:2.1rem;   /* 공통으로 사용 가능하게 됨 */
+  color: #272727;
+}
+
+h1 {
+  font-weight: 200;
+  line-height: 6.3rem;
+}
+
+h4, h3, h2 {
+  font-weight: 300;
+  line-height: 4.2rem;    /* 2칸  x 2.1rem  */
+}
+
+h5, h6 {
+  font-weight: 400;
+  line-height: 2.1rem;
+}
+
+h1 {
+     font-size: 5.0890rem;     /* 4.1041rem x 1.24 */
+}
+
+h2{
+    font-size: 4.1041rem;      /* 3.3098rem x 1.24   */
+}
+
+h3{
+    font-size:3.3098rem;          /* 2.6692rem x 1.24   */
+}
+
+h4{
+    font-size: 2.6692rem;         /*   2.1526rem x 1.24   */
+}
+
+h5{
+    font-size: 2.1526rem;        /* 1.736rem x 1.24  */
+}
+
+h6{
+    font-size:1.736rem;  /*  1.4rem x 1.24   */
+}
+
+.container{
+    width:640px;
+    margin-left:auto;
+    margin-right:auto;
+}
