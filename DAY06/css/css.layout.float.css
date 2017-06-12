@@ -1,0 +1,27 @@
+body{
+    margin: 4rem;
+}
+.box{
+    float:left;
+    margin-right: 2rem;
+    width:200px;
+    height: 200px;
+    font: 700 1.45rem Verdana;
+    color: #fff;
+}
+.is-central{
+    text-align: center;
+    line-height: 200px;
+}
+.promary{
+    background: #fa2645;
+}
+.secondary{
+    background: #fc8b9c;
+}
+.tertiary{
+    background: #ad3d4e;
+}
+.quaternary{
+    background: #4e4e4e;
+}
