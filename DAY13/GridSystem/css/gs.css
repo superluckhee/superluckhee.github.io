@@ -1,0 +1,68 @@
+html{
+    /*font-size: 10px;*/
+    background: #fff;
+}
+body{  
+  margin: 0;
+}
+body.guide::before{
+    content:'';
+    position: absolute;
+    z-index: 10000;
+    top:0;
+    left:50%;
+    width:1280px;
+    height: 200vh;
+    margin-left: -640px;
+}
+body.baseline::before{
+    background: linear-gradient(180deg, transparent 23px, #f06f6f 23px);
+    background-size: 1px 24px;
+}
+
+body.columns::before{
+    background: linear-gradient(90deg, hsla(21, 90%, 65%, 0.4) 50%, hsla(21, 90%, 65%, 0.2) 50%);
+    background-size: 320px 1px;
+}
+body.columns-baseline::before{
+    background: 
+    linear-gradient(180deg, transparent 23px, #f06f6f 23px),
+    linear-gradient(90deg, hsla(21, 90%, 65%, 0.4) 50%, hsla(21, 90%, 65%, 0.2) 50%);
+    background-size: 1px 24px, 320px 1px;
+}
+
+/* .container 모듈  */
+.container{
+    width:1280px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+/*  .row, .clearfix 모듈 */
+.row::after,
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+/* .column 모듈 */
+.column{
+    float:left;
+}
+.is-1{width:160px;}
+.is-2{width:320px;}
+.is-3{width:480px;}
+.is-4{width:640px;}
+.is-5{width:800px;}
+.is-6{width:960px;}
+.is-7{width:1120px;}
+.is-8{width:1280px;}
+
+
+
+
+
+
+

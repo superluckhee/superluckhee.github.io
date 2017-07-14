@@ -1,0 +1,48 @@
+body{margin: 0}
+body.grid{
+    position:relative;
+}
+body.grid::before{}
+
+
+
+/* 
+    Grid System Design
+    Colume Width: 200px
+    Column Count : 8
+    Gutter :false
+    container | row
+*/
+
+.container  {
+    width:1760px;
+    margin-left: auto;
+    margin-right:auto;
+}
+.row::after,
+clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+.column{float:left;}
+.column.is-1{width:220px;}
+.column.is-2{width:440px;}
+.column.is-3{width:660px;}
+.column.is-4{width:880px;}
+.column.is-5{width:1100px;}
+.column.is-6{width:1320px;}
+.column.is-7{width:1540px;}
+.column.is-8{width:1760px;}
+
+.column.is-offset-1{margin-left:220px;}
+.column.is-offset-2{margin-left:440px;}
+.column.is-offset-3{margin-left:660px;}
+.column.is-offset-4{margin-left:880px;}
+.column.is-offset-5{margin-left:1100px;}
+.column.is-offset-6{margin-left:1320px;}
+.column.is-offset-7{margin-left:1540px;}
+.column.is-offset-8{margin-left:1760px;}
+
+

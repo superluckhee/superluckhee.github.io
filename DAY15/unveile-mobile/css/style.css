@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font : 1.4rem/1.5 Dosis, Sans-Serif;
+    background: #fff;
+}
+
+/**
+#7d51ff
+#a3a4bd
+#454553
+*/
+
+.done-page{
+    text-align: center;
+}
+.icon{
+
+}
+.is-done{
+
+}
+.title{
+    
+}
+.sub-title{
+    font-weight: 700;
+    font-size:1.4rem;   /* 2/28px  */  
+    letter-spacing:1.7px;
+    text-transform: uppercase;
+    color:#7d51ff;
+}
+.done-page a{
+    
+}
+.link{
+    display:block;
+    padding:1em 0;
+    font-size: 1.6rem;
+}
+.is-order{
+    margin-bottom: 1.9rem;
+    line-height: 1.125;
+    font-weight: 500;
+    color:#a3a4bd;
+
+}
+.is-shop{
+    letter-spacing: 1.9px;
+    text-transform:uppercase;
+    text-decoration:none;
+    font-weight: 600;
+    color:#7d51ff;
+}

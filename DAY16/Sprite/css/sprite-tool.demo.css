@@ -1,0 +1,99 @@
+/*
+    sprite-tool을 사용한 sprite
+*/
+
+.demo{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: #333;
+}
+.sprite-zone{
+    width: 117px;
+    height: 78px;
+    padding:1em;
+    background: #fff;
+}
+.sprite-zone:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.sprite{
+    float: left;
+    display: block;
+    width: 39px;
+    height: 26px;
+    background-image: url("../Assets/sprite-tool.png")
+}
+
+.Behance, .clock, .Dribbble, .face, .Facebook, .Instagram, .lock, .MasterCard, .PayPal, .Twitter, .Visa{
+	background: url(sprites.png) no-repeat;
+}
+
+.Behance{
+	background-position: -105.00000762939453px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.clock{
+	background-position: -79.00000762939453px -30.000011444091797px ;
+	width: 17px;
+	height: 17px;
+}
+
+.Dribbble{
+	background-position: -79.00000762939453px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.face{
+	background-position: -110.00000762939453px -31.00002670288086px ;
+	width: 12px;
+	height: 16px;
+}
+
+.Facebook{
+	background-position: -53.00000762939453px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.Instagram{
+	background-position: -26px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.lock{
+	background-position: -97.00000762939453px -31.000003814697266px ;
+	width: 12px;
+	height: 16px;
+}
+
+.MasterCard{
+	background-position: -0.00002288818359375px -26.000011444091797px ;
+	width: 39px;
+	height: 23px;
+}
+
+.PayPal{
+	background-position: -1.0000076293945312px -50.00002670288086px ;
+	width: 36px;
+	height: 10px;
+}
+
+.Twitter{
+	background-position: 0 0;
+	width: 26px;
+	height: 26px;
+}
+
+.Visa{
+	background-position: -39.00000762939453px -32.000003814697266px ;
+	width: 39px;
+	height: 13px;
+}

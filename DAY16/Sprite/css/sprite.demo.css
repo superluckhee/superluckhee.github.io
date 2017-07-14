@@ -1,0 +1,42 @@
+/*
+    float: left; 를 사용한 sprite
+*/
+
+.demo{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: #333;
+}
+.sprite-zone{
+    width: 117px;
+    height: 78px;
+    padding:1em;
+    background: #fff;
+}
+.sprite-zone:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.sprite{
+    float: left;
+    display: block;
+    width: 39px;
+    height: 26px;
+    background-image: url("../Assets/sprite-handmade.png")
+}
+
+/*세로로 */
+.sprite.is-behance   {background-position: 0 0;}
+.sprite.is-facebook  {background-position: 0 -26px;}
+.sprite.is-master    {background-position: 0 -52px;}
+.sprite.is-clock     {background-position: -39px 0;}
+.sprite.is-headphone {background-position: -39px -26px;}
+.sprite.is-paypal    {background-position: -39px -52px;}
+.sprite.is-dribble   {background-position: -78px 0;}
+.sprite.is-instagram {background-position: -78px -26px;}
+.sprite.is-twitter   {background-position: -78px -52px;}
+
+

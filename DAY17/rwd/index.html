@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Web Design Grid System</title>
+    <link rel="stylesheet" href="./css/rwd.css">
+</head>
+<body>
+    
+    <div class="demo">
+        <!-- 콘텐츠 이미지, 비디오 예시 -->
+        <figure class="hide img-wrapper">
+            <img class="rwd-img"  src="https://unsplash.it/800/420?image=10" alt="숲 건너 저편의 바다" width="800" height="420">
+        </figure>
+        <figure class="hide video-wrapper">
+            <video class="rwd-video" autoplay controls loop="0"  src="./media/holzweiler_new.mp4" width="900" height="540"></video>
+        </figure>
+
+        <!-- 배경 이미지 -->
+        <figure class="hide rwd-bg green-leap"></figure>
+
+        <figure class="hide rwd-bg bird"></figure>
+
+        <!-- 크롭 이미지 예시 -->
+        <header class="hide big-header">
+            <h1>A Cracker</h1>
+            <figure class="crop-img-wrapper">
+             <!--   <img class="crop-img" src="./images/joshua-sortino.jpg" alt="" width="900" height="400">   -->
+             <img class="crop-img" src="./images/ray-hennessy.jpg" alt="" width="1920" height="1278">
+            </figure>
+        </header>
+
+
+        <!-- 크롭 컨텐츠 이미지 예시 , 마우스 오버시 이미지 사이즈 커지게/ 이미지 스케일 업 -->
+        <a href="" class="hide scale-up">
+            <div class="scale-wrap">
+                <img src="./images/ray-hennessy.jpg" alt="" class="scale-img" width="140" height="200">
+                <span class="scale-mask"></span>
+            </div>
+        </a>
+
+
+
+        <header class="hide big-header cracker">
+            <h1 class="big-header-title">A Cracker</h1>
+        </header>
+
+
+        <!-- 유연한 iframe 유튜브/비메오/map--> 
+        <figure class="youtube is-16x9">   <!--  is-4x3 , is-16x9 :와이드 ,  is-21x9 :스크린 -->
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/nfs8NYg7yQM"  allowfullscreen></iframe> 
+        </figure>
+
+        <figure class="youtube is-4x3">   <!--  is-4x3 , is-16x9 :와이드 ,  is-21x9 :스크린 -->
+          <iframe width="640" height="360" src="https://www.youtube.com/embed/nfs8NYg7yQM"  allowfullscreen></iframe> 
+        </figure>
+
+        <figure class="map is-4x3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.260528647742!2d127.00260191508376!3d37.501773035592514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca170606a5a73%3A0xfd0084ecc8e99cb9!2z6rCA7Yao66at64yA7ZWZ6rWQIOyEnOyauOyEseuqqOuzkeybkA!5e0!3m2!1sen!2skr!4v1499951561468" width="600" height="450" frameborder="0"  allowfullscreen></iframe>
+        </figure>
+
+    </div>
+</body>
+</html>

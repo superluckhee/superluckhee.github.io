@@ -1,0 +1,79 @@
+/* Gutter Split 일때*/
+
+body {
+  margin: 0;
+}
+body.grid {
+  position: relative;
+}
+body.grid::before,
+body.grid::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 200vh;
+}
+body.grid::before {
+  z-index: 10000;
+  width: 100%;
+  background: linear-gradient(180deg, transparent 9px, hsla(39, 34.9%, 50.6%, 0.5) 9px);
+  background-size: 1px 10px;
+}
+body.grid::after {
+  z-index: 1000;
+  width: 1320px;  /* 가장 첫,마지막 gutter의 10px 10px 때문에 width값에 10px, 10px(20px 더해준다)  */
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent 0px, rgba(121, 255, 0, 0.22) 11px,  rgba(121, 255, 0, 0.22) 99px, transparent 99px);
+  background-size: 100px 1px;
+}
+
+.container{
+    width:1320px;   /* 가장 첫,마지막 gutter의 10px 10px 때문에 width값에 10px, 10px(20px 더해준다)  */
+    margin-left: auto;
+    margin-right: auto;
+}
+.row::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.column{
+    float:left;
+    margin-right:11px;
+    margin-right: 11px;
+}
+
+.column.is-1{width:99px;}
+.column.is-2{width:209px;}
+.column.is-3{width:319px;}
+.column.is-4{width:429px;}
+.column.is-5{width:539px;}
+.column.is-6{width:649px;}
+.column.is-7{width:759px;}
+.column.is-8{width:869px;}
+.column.is-9{width:979px;}
+.column.is-10{width:1089px;}
+.column.is-11{width:1199px;}
+.column.is-12{width:1309px;}
+
+.column.is-offset-1  { margin-left: 121px;  }
+.column.is-offset-2  { margin-left: 231px;  }
+.column.is-offset-3  { margin-left: 341px;  }
+.column.is-offset-4  { margin-left: 451px;  }
+.column.is-offset-5  { margin-left: 561px;  }
+.column.is-offset-6  { margin-left: 671px;  }
+.column.is-offset-7  { margin-left: 781px;  }
+.column.is-offset-8  { margin-left: 891px;  }
+.column.is-offset-9  { margin-left: 911px;  }
+.column.is-offset-10 { margin-left: 1011px; }
+.column.is-offset-11 { margin-left: 1111px; }
+
+.column.last, .column.omega{margin-right: 0;}
+
+
+
+/*
+최근 표준 1320px
+
+*/

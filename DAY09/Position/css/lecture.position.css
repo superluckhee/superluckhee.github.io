@@ -1,0 +1,38 @@
+body{
+    margin: 30px;
+}
+.box-parent{
+    /*absolute 는 부모 설정을,  position 속성이 기본값이 아닌 자신을 포함하는 가장 가까운 부모 요소*/
+    /*fixed 는 부모설정을 무조건 화면*/
+    position: relative;
+    border:1px solid #aaa;
+}
+
+.box-child{
+    width:200px;
+    height:110px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 20px;
+    background: #111;
+    color: #fff;
+}
+
+.box-child::last-child{
+    margin-bottom: 0;
+}
+
+.is-1st{
+    position: absolute;
+    bottom:5px;
+    left:5px;
+    background: #3ab982;
+    }
+.is-2nd{
+    position:absolute;
+    top:5px;
+    right:5px;
+    background: #e5be9b;
+    }
+.is-3rd{background: #fd414b}

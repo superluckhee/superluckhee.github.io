@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+.banner{
+    overflow: hidden;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -160px;
+    margin-left: -400px;
+    width: 800px;
+    height: 320px;
+    background: #222;
+}
+
+.banner .banner-bg,
+.banner .banner-apes,
+.banner .banner-golliras,
+.banner .banner-kingkong,
+.banner .banner-logo,
+.banner .banner-content{
+    position: absolute;
+}
+
+
+.banner-bg{}
+.banner-apes{
+    bottom:92px;
+    left:4px;
+}
+.banner-golliras{
+    bottom:24px;
+    left:11px;
+}
+.banner-kingkong{
+    bottom:0;
+    right:11px
+}
+.banner-logo{
+    top:19px;
+    left:18px;
+}
+.banner-content{
+    top:29px;
+    left:122px;
+}

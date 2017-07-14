@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: #aaa;
+}
+
+.container{
+    display:flex;
+    /*flex-direction:column-reverse;
+    flex-wrap:wrap;  
+    flex-flow:column;*/
+    width: 70%;
+    height: 450px;
+    background: #111;
+}
+
+.item{
+    width:90px;
+   height:90px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    background: #fff;
+    font-size: 20px;
+    color:#444;
+
+}
+
+.item:nth-child(3n-1){
+    height: 180px;
+}
+.is-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

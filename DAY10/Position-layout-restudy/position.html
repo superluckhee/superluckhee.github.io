@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 포지녀닝 테크닉 z-index</title>
+    <style>
+        html{font-size:10px;}
+        body{margin:5rem;}
+        .box{padding:1rem; border:1px solid #aaa;}
+        .parent{background: #bcbcbc;}
+        .child{
+            width:14rem;
+            height:14rem;
+            color: rgba(255,255,255,1);
+            font-weight: 700;
+            font-size: 1.7rem;
+
+        }
+        .one{
+            position: relative;
+            z-index: 1000000;
+            background-color:hsl(345, 65%, 70%)
+        }
+        .two{
+            position: absolute;
+            z-index: 100;
+            /* text-shadow: x y blur spread color; */
+            text-shadow:0 0 0.5rem hsl(167, 65%, 40%);
+            background-color:hsl(167, 65%, 70%);
+        }
+        .three{
+            position: absolute;
+            z-index: 1000;
+            top:150px;
+            left:30px;
+            background-color:hsl(243, 65%, 70%, 0.6);
+        }
+
+        /* 첫번쨰 부모 설정*/
+        .parent.is-1st{
+            z-index: 0;
+        }
+        .is-1st .one{z-index: 100;}
+        .is-1st .two{z-index: 100;}
+        .is-1st .three{z-index: 100;}
+    </style>
+</head>
+<body>
+    <div class="box parent is-1st">
+     <!--   .box.child.one+.box.child.two+.box.child.three   -->
+       <div class="box child one">one</div>
+       <div class="box child two">two</div>
+      <div class="box child three">three</div>
+    </div>
+
+    
+    <div class="box parent is-2nd">
+       <div class="box child one">one</div>
+       <div class="box child two">two</div>
+      <div class="box child three">three</div>
+    </div>
+</body>
+</html>
